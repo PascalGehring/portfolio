@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sticky section {
+  height: 200vh;
+  width: 100vw;
+}
+
+.sticky section h1 {
+  position: sticky;
+}
