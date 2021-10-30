@@ -8,27 +8,34 @@
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fade_in_out.css">
     <title>Pascal Gehring | Portfolio</title>
 </head>
 <body>
 
 
-    <section class="slide hero">
+
+    <!-- <section class="test fadeInOut">
+
+
+    </section> -->
+
+
+    <section class="hero fadeOut">
 
         <div class="slide-element hero">
-            <div class="column">
+          
 
                 
                 <div class="column-centered-element">
                     <h1>
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I&#x27m Pascal.", "I founded more startups than gf I had." ]'>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I&#x27m Pascal.", "I&#x27m from Zurich, Switzerland.", "I founded more startups than gf I had.*","I&#x27m 18." ]'>
                           <span class="wrap"></span>
                         </a>
                       </h1>
                 </div>
 
-          
-            </div>
+       
 
              
                 <div class="column-element scroll-down-arrow move-up-and-down">
@@ -46,7 +53,7 @@
 
 
 
-    <section class="slide perfect-match">
+    <!-- <section class="slide perfect-match">
 
         <div class="slide-element perfect-match">
             <div class="column-centered-element">
@@ -56,33 +63,48 @@
     
         
     
-    </section>
+    </section> -->
+
+
+
+
+        <div class="perfect-match fadeInOut">
+            <h1>I'm the perfect match for your team.</h1>
+        </div>
+
 
  
 <section class="slide why">
 
 
 
-<div class="slide-element why">
-    <div class="column-centered-element">
+    <div class="heres-why fadeInOut">
         <h1>Here's why:</h1>
     </div>
-</div>
 
 
-<div class="slide-element why reason">
-    <h1 class="light-grey">1</h1>
-    <h1>I love to code.</h1>
-</div>
+
+    <div class="reason1 fadeInOut why reason">
+        <h1 class="light-grey">1</h1>
+        <h1>I love to code.</h1>
+    </div>
+
+    <div class="reason2 fadeInOut why reason">
+        <h1 class="light-grey">2</h1>
+        <h1>I have entrepreneurial spirit.</h1>
+    </div>
+
 
 </section>
 
 
 <section class="stuff-done">
 
-    <div class="slide-element stuff-done">
-        <h1>Stuff I've done:</h1>
-    </div>
+        <div class="stuff-done fadeInOut why reason">
+
+            <h1>Stuff I've done:</h1>
+        </div>
+
 
 
     <div class="slide-element stuff-done showcase">
@@ -91,16 +113,13 @@
     </div>
 
 </section>
-<!--     
-    <div class="container-centered">
-        <h1>Some Text</h1>
-    </div>
 
-    <div class="container-centered">
-        <h1>Some Text</h1>
-    </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
+    <script src="fade_in_out.js"></script>
     <script src="typewriter.js"></script>
 
 </body>

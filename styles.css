@@ -17,16 +17,6 @@ h1 {
   font-size: 3rem;
 }
 
-/* Handled in JS */
-/* section.slide {
-  height: 200vh;
-  background-color: green;
-}
-
-.slide-element.hero {
-  background-color: white;
-} */
-
 .slide-element {
   height: 100vh;
   display: flex;
@@ -34,11 +24,6 @@ h1 {
   justify-content: center; /* cross axis */
   position: relative;
 }
-
-/* .column-centered-element {
-  align-self: center;
-  background-color: rebeccapurple;
-} */
 
 .column {
   height: 100vh;
@@ -55,7 +40,6 @@ div.scroll-down-arrow {
   flex-direction: column;
   align-items: center;
   bottom: 5vh;
-  /* background-color: red; */
 }
 
 div.scroll-down-arrow p {
