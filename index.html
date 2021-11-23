@@ -38,9 +38,11 @@
        
 
              
-                <div class="column-element scroll-down-arrow move-up-and-down">
+                <div class=" scroll-down-arrow ">
                     <p>Scroll for more.</p>
-                    <i class="fas fa-chevron-down fa-2x"></i>
+                    <div class="move-up-and-down">
+                        <i class="fas fa-chevron-down fa-2x"></i>
+                    </div>
                 </div>
       
         </div>
@@ -107,10 +109,44 @@
 
 
 
-    <div class="slide-element stuff-done showcase">
-        <h1>Schoolspace.</h1>
-        <p class="dark-grey">One App for everything school related.</p>
+    <div class="schoolspace fadeInOut showcase">
+
+        <div class="row">
+
+            <div class="showcase-text column ps">
+
+            <h1>Schoolspace.</h1>
+            <h4 class="dark-grey">One App for everything school related.</h4>
+            </div>
+
+
+            <div class="showcase-mockup column ps">
+                <img src="img/schoolspace_mockup.png" alt="Schoolspace Mockup">
+            </div>
+        </div>
+
     </div>
+
+    <div class="say-hello fadeInOut">
+       <h1>Say Hello:</h1>
+       <div class="move-up-and-down">
+
+        <i class="fas fa-chevron-down fa-2x"></i>
+    </div>
+
+    </div>
+
+    <div class="contact fadeIn">
+        <div class="row">
+            <a href="https://www.linkedin.com/in/pascal-gehring-359638154/?originalSubdomain=ch">  <h1 class="ps">LinkedIn</h1></a>
+            <h1 class="ps">Github</h1>
+            <h1 class="ps">Email Icon</h1>
+        </div>
+        
+
+    </div>
+
+  
 
 </section>
 
@@ -119,7 +155,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
-    <script src="fade_in_out.js"></script>
+    <script src="animations/fade_in_out.js"></script>
+    <script src="animations/fade_out.js"></script>
+    <script src="animations/fade_in.js"></script>
     <script src="typewriter.js"></script>
 
 </body>

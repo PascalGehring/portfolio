@@ -1,17 +1,16 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const animationScrollLength = 1000;
+var animationScrollLength = 333;
 
-const className = 'fadeOut'
+var className = 'fadeOut'
 
-const animations = document.querySelectorAll(`.${className}`);
+var animations = document.querySelectorAll(`.${className}`);
 
 console.log(animations);
 
 
-let animationCounter = 0;
-
 animations.forEach((animation) => {
+
 
     let anName = animation.classList[0];
 
@@ -31,8 +30,7 @@ animations.forEach((animation) => {
     );
     
     
-    tl
-    .to(`.${className}.${anName}`, {opacity: 0, y: -20, duration:2});
+    tl.to(`.${className}.${anName}`, {opacity: 0, y: -20, duration:1});
     
     
 });
