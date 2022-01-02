@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-var animationScrollLength = 2000;
+var animationScrollLength = 1000;
 
 var className = 'fadeInOut'
 
@@ -11,17 +11,21 @@ console.log(animations);
 animations.forEach((animation) => {
 
 
+
     let anName = animation.classList[0];
+
+
+    console.log(anName);
 
     let tl = new gsap.timeline(
         {
         scrollTrigger: {
             trigger: `.${className}.${anName}`,
-            end: `+=${animationScrollLength}`,
             markers: true,
             scrub: true,
             toggleActions: 'restart pause reverse pause',
             pin: true,
+            pinSpacing: false,
         }
     
     }

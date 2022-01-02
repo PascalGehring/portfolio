@@ -18,11 +18,11 @@ animations.forEach((animation) => {
         {
         scrollTrigger: {
             trigger: `.${className}.${anName}`,
-            end: `+=${animationScrollLength}`,
             markers: true,
             scrub: true,
             toggleActions: 'restart pause reverse pause',
             pin: true,
+            pinSpacing: false,
         }
     
     }
