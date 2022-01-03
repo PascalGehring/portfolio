@@ -1,19 +1,9 @@
+function init(){
 
-// const sections = ['hero', 'perfect-match','why'];
+    uss.hrefSetup(); 
+  //  uss.setStepLengthCalculator(EASE_IN_OUT_QUART(1000)); 
 
+    
+}
 
-// sections.forEach((className) => {
-//     var section = document.querySelector(`section.slide.${className}`);
-//     var numberOfElements = document.querySelectorAll(`div.slide-element.${className}`).length;
-
-
-//     section.style.height = `${numberOfElements *100}vh`;
-// } );
-
-
-
-
-
-
-
-
+init();

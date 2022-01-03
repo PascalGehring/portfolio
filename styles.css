@@ -6,11 +6,6 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html{
-  /* TODO: Does not work in safari */
-  
-  scroll-behavior: smooth;
-}
 
 :root {
   --black: #000000;
@@ -44,10 +39,11 @@ h1 {
 }
 
 div.scroll-down-arrow {
+  z-index: 100;
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   width: max-content;
   bottom: 5vh;
 }
@@ -55,6 +51,7 @@ div.scroll-down-arrow {
 div.scroll-down-arrow p {
   font-size: 10px;
 }
+
 
 .light-grey {
   color: var(--light-grey);
@@ -79,7 +76,6 @@ div.reason h1.light-grey {
 .showcase-mockup > img{
 width: 300px;
 }
-
 
 
 /* Moving up and down */
