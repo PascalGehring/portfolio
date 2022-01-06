@@ -7,15 +7,7 @@
 }
 
 
-body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-}
 
-html {
-  height: -webkit-fill-available;
-}
 
 
 :root {
@@ -23,6 +15,7 @@ html {
   --white: #ffffff;
   --light-grey: #dedede;
   --dark-grey: #bababa;
+  --app-height: 100%;
 }
 
 h1 {
@@ -119,3 +112,39 @@ body {
   position: absolute;
   top: 2vh;
 }
+
+
+/* Panel Styling */
+
+.fadeInOut {
+  height: var(--app-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fadeOut {
+  height: var(--app-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fadeIn {
+  height: var(--app-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media (max-width: 480) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+} */
