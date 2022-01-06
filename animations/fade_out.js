@@ -6,7 +6,6 @@ var className = 'fadeOut'
 
 var animations = document.querySelectorAll(`.${className}`);
 
-console.log(animations);
 
 
 animations.forEach((animation) => {
@@ -18,7 +17,6 @@ animations.forEach((animation) => {
         {
         scrollTrigger: {
             trigger: `.${className}.${anName}`,
-            markers: true,
             scrub: true,
             toggleActions: 'restart pause reverse pause',
             pin: true,
@@ -28,6 +26,11 @@ animations.forEach((animation) => {
     }
     
     );
+
+    tl.set(".fadeInOut" ,{zIndex: (i, target, targets) => 30});
+
+
+    tl.set(".fadeOut" ,{zIndex: (i, target, targets) => 31});
     
     
     tl.to(`.${className}.${anName}`, {opacity: 0, y: -20, duration:1});

@@ -7,6 +7,17 @@
 }
 
 
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+
 :root {
   --black: #000000;
   --white: #ffffff;
@@ -16,6 +27,7 @@
 
 h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .slide-element {
@@ -39,7 +51,6 @@ h1 {
 }
 
 div.scroll-down-arrow {
-  z-index: 100;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -78,19 +89,6 @@ width: 300px;
 }
 
 
-/* Moving up and down */
-div.move-up-and-down {
-  animation: up-down 1s infinite alternate;
-}
-
-@keyframes up-down {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(10px);
-  }
-}
 
 body {
   color: black;
@@ -117,3 +115,7 @@ body {
   color: var(--dark-grey);
 }
 
+.contact-link{
+  position: absolute;
+  top: 2vh;
+}

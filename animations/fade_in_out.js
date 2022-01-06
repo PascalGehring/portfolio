@@ -6,39 +6,47 @@ var className = 'fadeInOut'
 
 var animations = document.querySelectorAll(`.${className}`);
 
-console.log(animations);
 
 animations.forEach((animation) => {
+
 
 
 
     let anName = animation.classList[0];
 
 
-    console.log(anName);
-
     let tl = new gsap.timeline(
         {
         scrollTrigger: {
             trigger: `.${className}.${anName}`,
-            markers: true,
             scrub: true,
             toggleActions: 'restart pause reverse pause',
             pin: true,
+            //pinReparent: true,
             pinSpacing: false,
+
         }
     
     }
     
     );
+
+
+  
+    tl.set(".fadeInOut" ,{zIndex: (i, target, targets) => targets.length - i});
+
     
     
-    tl.from(`.${className}.${anName}`, {opacity: 0, y: 20, duration: 1})
-    .to(`.${className}.${anName}`,{ duration: 4})
-    .to(`.${className}.${anName}`, {opacity: 0, y: -20, duration:1});
+    tl.from(animation, {opacity: 0, y: 20, duration: 1})
+    .to(animation,{ duration: 2})
+    .to(animation, {opacity: 0, y: -20, duration:1});
     
     
+ 
+
 });
+
+
 
 
 

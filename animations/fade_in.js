@@ -6,7 +6,6 @@ var className = 'fadeIn'
 
 var animations = document.querySelectorAll(`.${className}`);
 
-console.log(animations);
 
 
 animations.forEach((animation) => {
@@ -18,10 +17,10 @@ animations.forEach((animation) => {
         {
         scrollTrigger: {
             trigger: `.${className}.${anName}`,
-            markers: true,
             scrub: true,
             toggleActions: 'restart pause reverse pause',
             pin: true,
+            
 
         }
     
@@ -30,8 +29,9 @@ animations.forEach((animation) => {
     );
     
     
+    tl.set(".fadeIn" ,{zIndex: (i, target, targets) => -20});
     
-    tl.from(`.${className}.${anName}`, {opacity: 0, y: 20, duration: 1})
+    tl.from(animation, {opacity: 0, y: 20, duration: 1})
  
     
 });
