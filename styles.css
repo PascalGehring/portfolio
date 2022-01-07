@@ -76,6 +76,7 @@ div.reason h1.light-grey {
   top: 10px;
 }
 
+
 /* Stuff I've done */
 .showcase-mockup > img{
 width: 300px;
@@ -140,6 +141,51 @@ body {
   align-items: center;
 }
 
+
+/* MODAL */
+
+.modal {
+  display: none;
+  background-color: #fefefe;
+  margin-top: 15px;
+  width: 30%;
+  min-width: 300px;
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+
+.modal-content{
+  text-align: center;
+  padding: 20px 30px 30px 30px;
+}
+
+
+/* The Close Button */
+.close {
+  position: relative;
+  top: 10px;
+  right: 20px;
+  color: var(--light-grey);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* span.gd:hover{
+  cursor: hand;
+}
+?? */
+
+
 /* @media (max-width: 480) {
   .row{
     display: flex;
@@ -148,3 +194,5 @@ body {
   }
   
 } */
+
+
