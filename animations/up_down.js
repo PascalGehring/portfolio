@@ -14,9 +14,11 @@ animations.forEach((animation) => {
         y: 20,
         duration: 1,
         yoyo: true,
-       repeat: -1,
-       ease: Power2.easeOut,
+        repeat: -1,
+        ease: Power2.easeOut,
     });
+
+
 
     
 

@@ -163,22 +163,27 @@ body {
   font-weight: bold;
 }
 
-/* .close:hover,
+.close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
-} */
+}
 
 /* .fadeInOut.active{
   pointer-events: auto;
 } */
 
-/* span.gd:hover{
-  cursor: hand;
-}
-?? */
 
+.copyright{
+  display: flex;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  bottom: 5vh;
+
+}
 
 
 @media screen and (max-width: 600px) {
@@ -198,3 +203,8 @@ body {
 
   
 }
+
+.active{
+  z-index: 100;
+}
+

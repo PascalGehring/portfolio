@@ -21,17 +21,12 @@ animations.forEach((animation) => {
             toggleActions: 'restart pause reverse pause',
             pin: true,
             pinSpacing: false,
+            toggleClass: "active",
         }
     
     }
     
-    );
-
-   // tl.set(".fadeInOut" ,{zIndex: (i, target, targets) => 30});
-
-
-    // tl.set(".fadeOut" ,{zIndex: (i, target, targets) => 31});
-    
+    );    
     
     tl.to(`.${className}.${anName}`, {opacity: 0, y: -20, duration:1});
     

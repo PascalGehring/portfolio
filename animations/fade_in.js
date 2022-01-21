@@ -19,6 +19,7 @@ animations.forEach((animation) => {
             trigger: `.${className}.${anName}`,
             scrub: true,
             toggleActions: 'restart pause reverse pause',
+            toggleClass: "active",
             pin: true,
             
 
@@ -28,8 +29,6 @@ animations.forEach((animation) => {
     
     );
     
-    
-   // tl.set(".fadeIn" ,{zIndex: (i, target, targets) => -20});
     
     tl.from(animation, {opacity: 0, y: 20, duration: 1})
  

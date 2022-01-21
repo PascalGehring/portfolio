@@ -10,6 +10,12 @@ function init(){
   window.addEventListener('resize', appHeight)
   appHeight()
 
+
+  window.onload = function () {
+    document.getElementsByClassName("active").onclick = function() {
+      console.log("HelloMf");
+    };
+  };
     
 }
 
