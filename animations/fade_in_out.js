@@ -23,7 +23,7 @@ animations.forEach((animation) => {
             toggleActions: 'restart pause reverse pause',
             pin: true,
             pinSpacing: false,
-            toggleClass: "active",
+           // toggleClass: "active",
             markers: true
         }
     

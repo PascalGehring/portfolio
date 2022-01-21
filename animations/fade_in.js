@@ -29,7 +29,7 @@ animations.forEach((animation) => {
     );
     
     
-    tl.set(".fadeIn" ,{zIndex: (i, target, targets) => -20});
+   // tl.set(".fadeIn" ,{zIndex: (i, target, targets) => -20});
     
     tl.from(animation, {opacity: 0, y: 20, duration: 1})
  
