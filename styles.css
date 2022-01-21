@@ -14,9 +14,12 @@
   --app-height: 100%;
 }
 
+
 h1 {
   font-size: 3rem;
   text-align: center;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 
 .slide-element {
@@ -176,11 +179,22 @@ body {
 }
 ?? */
 
-/* @media (max-width: 480) {
+
+
+@media screen and (max-width: 600px) {
   .row{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .number{
+    font-size: 3rem;
+  }
+
   
-} */
+}
