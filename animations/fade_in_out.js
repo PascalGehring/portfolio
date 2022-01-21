@@ -22,20 +22,17 @@ animations.forEach((animation) => {
             scrub: true,
             toggleActions: 'restart pause reverse pause',
             pin: true,
-            //pinReparent: true,
             pinSpacing: false,
-
+            toggleClass: "active",
+            markers: true
         }
     
     }
     
     );
 
-
-  
-    tl.set(".fadeInOut" ,{zIndex: (i, target, targets) => targets.length - i});
-
     
+    //tl.set(".fadeInOut" ,{zIndex: (i, target, targets) => targets.length - i});
     
     tl.from(animation, {opacity: 0, y: 20, duration: 1})
     .to(animation,{ duration: 2})
@@ -50,6 +47,10 @@ animations.forEach((animation) => {
 
 
 
+
+
+
+  
 
 
 

@@ -180,6 +180,10 @@ body {
   cursor: pointer;
 }
 
+.fadeInOut.active{
+  pointer-events: auto;
+}
+
 /* span.gd:hover{
   cursor: hand;
 }
