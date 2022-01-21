@@ -8,7 +8,7 @@ var popUpName = popUp.classList[1];
 
 var gestureDetector = document.querySelector(`.gd.${popUpName}`);
 
-var reason = document.querySelector(`h1.${popUpName}`);
+var reason = document.querySelector(`.hide.${popUpName}`);
 
 var close = document.querySelector(`span.close.${popUpName}`);
 

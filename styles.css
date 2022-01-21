@@ -22,6 +22,10 @@ h1 {
   margin-right: 2vh;
 }
 
+h4{
+  text-align: center;
+}
+
 .slide-element {
   height: 100vh;
   display: flex;
@@ -208,3 +212,13 @@ body {
   z-index: 100;
 }
 
+.avatar {
+  position: absolute;
+  vertical-align: middle;
+  width: 15vh;
+  top: 33vh;
+
+  border-radius: 15vh;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

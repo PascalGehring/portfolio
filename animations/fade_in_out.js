@@ -24,7 +24,6 @@ animations.forEach((animation) => {
             pin: true,
             pinSpacing: false,
             toggleClass: "active",
-            markers: true
         }
     
     }
