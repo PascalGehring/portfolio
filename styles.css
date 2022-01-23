@@ -299,7 +299,7 @@ body {
 .text {
   color: var(--black);
   font-size: 15px;
-  padding: 30px 12px;
+  margin-top: 4vh;
   width: 100%;
   text-align: center;
   
@@ -337,6 +337,13 @@ body {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+
+
+.indicator-dots{
+  position: relative;
+  top: 9.5vh
 }
 
 @-webkit-keyframes fade {
