@@ -31,6 +31,7 @@ animations.forEach((animation) => {
     
     
     tl.from(animation, {opacity: 0, y: 20, duration: 1})
+    tl.to(animation,{duration:1})
  
     
 });

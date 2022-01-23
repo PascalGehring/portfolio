@@ -10,61 +10,111 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <script src="node_modules/universalsmoothscroll/universalsmoothscroll-min.js"></script>
-    <title>Pascal Gehring | Portfolio</title>
+    
+        <!-- Für Apple-Geräte -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
+        <!-- Für Browser -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon-32x32.ico">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <!-- Für Windows Metro -->
+        <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png">
+        <meta name="msapplication-TileColor" content="[HEXFARBE (z.B. #000000)]">
+
+    <title>Portfolio | Pascal Gehring</title>
 </head>
 <body>
 
+    <!-- <div class="email-me">
+        <a href="mailto:hire@pascalgehring.com?&subject=Internship&body=Hey%20Pascal"><i class="far fa-envelope-open fa-2x pm"></i></a> 
+    </div> -->
 
 
-    <section class="hero fadeOut">
 
+    <section class="hero fadeOut">     
 
+            <div class="hide slideshow">
 
-        <img src="img/Memoji.jpg" class="avatar">  
+               
+                <div class="gd slideshow">
+                    <div class="hcentre">
+                        <img src="img/Memoji.jpg" class="avatar"></img>
+                    </div>
+                </div>
+
+            
 
         <div class="slide-element hero">
-          
+            <h1 class="hero-heading">
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I&#x27m Pascal.","I&#x27m 18.", "I&#x27m a last year highschool student from Zurich.", "I founded more startups than jobs I had." ]'>
+                  <span class="wrap"></span>
+                </a>
+              </h1>
 
-                          
-                <div class="column-centered-element">
+
+              <div class="scroll-down-arrow">
+
+                <a href="#perfect-match">
+                    <div class="move-up-and-down fas fa-chevron-down fa-3x">
+                    </div>
+                </a>
+               
+            </div>
+        </div>
+
+            </div>
+
+       
+
+        <div class="modal slideshow">
+            <span class="close slideshow">&times;</span>
+            <div class="modal-content">
 
 
-                </img>
-                    <h1>
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, I&#x27m Pascal.","I&#x27m 18.", "I&#x27m a last year highschool student from Zurich.", "I founded more startups than jobs I had." ]'>
-                          <span class="wrap"></span>
-                        </a>
-                      </h1>
-                </div>
+
+                <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/img1.jpeg" style="width:100%">
+      <div class="text">Me Working</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/img2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/img3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+               </div>
+
+        </div>
 
        
 
              
 
-                    <div class="scroll-down-arrow">
-
-                        <a href="#perfect-match">
-                            <!-- <p>Scroll down for more.</p> -->
-                            <div class="move-up-and-down fas fa-chevron-down fa-3x">
-                            </div>
-                        </a>
-                       
-                    </div>
               
-        </div>
-
-        <!-- <div class="contact-link">
-
-            <a href="#contact">
-                <div class="fas fa-chevron-down fa-3x">
-                </div>
-            </a>
-           
-        </div> -->
-
-
-
-
 
     </section>
 
@@ -272,7 +322,7 @@
 
 
    <div class="scroll-down-arrow">
-            <a href="#stuff-done">
+            <a href="#reason6">
                 <div class="move-up-and-down fas fa-chevron-down fa-3x">
                 </div>
             </a>
@@ -376,13 +426,13 @@
             <div class="showcase-text column ps">
 
             <a href="https://schoolspace.ch/download" target="_blank" rel="noopener noreferrer">
-                <h1 id="schoolspace">Schoolspace.</h1>
+                <h1>Schoolspace.</h1>
                 <h4 class="dark-grey">One App for everything school related.</h4>
                 </div>
     
     
                 <div class="showcase-mockup column pm">
-                    <img src="img/schoolspace_mockup.png" alt="Schoolspace Mockup">
+                    <img id="schoolspace" src="img/schoolspace_mockup.png" alt="Schoolspace Mockup">
                 </div>
 
 
@@ -408,13 +458,13 @@
             <div class="showcase-text column ps">
 
             <a href="https://schoolspace.ch/download" target="_blank" rel="noopener noreferrer">
-                <h1 id="conum">Conum.</h1>
+                <h1>Conum.</h1>
                 <h4 class="dark-grey">Live covid-19 stats for every country in the world.</h4>
                 </div>
     
     
                 <div class="showcase-mockup column pm">
-                    <img src="img/schoolspace_mockup.png" alt="Schoolspace Mockup">
+                    <img id="conum" src="img/schoolspace_mockup.png" alt="Schoolspace Mockup">
                 </div>
 
 
@@ -524,6 +574,7 @@
     <script src="pop_up.js"></script>
 
     <script src="typewriter.js"></script>
+    <script src="slide_show.js"></script>
 
 </body>
 </html>
