@@ -11,7 +11,7 @@
   --white: #ffffff;
   --light-grey: #dedede;
   --dark-grey: #bababa;
-  --app-height: 100%;
+
 }
 
 
@@ -32,6 +32,11 @@ h4{
   align-items: center; /* main axis */
   justify-content: center; /* cross axis */
   position: relative;
+}
+
+.hero-heading{
+  position: relative;
+  top: 1vh;
 }
 
 .column {
@@ -116,7 +121,7 @@ body {
 /* Panel Styling */
 
 .fadeInOut {
-  height: var(--app-height);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +129,7 @@ body {
 }
 
 .fadeOut {
-  height: var(--app-height);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +137,7 @@ body {
 }
 
 .fadeIn {
-  height: var(--app-height);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,23 +200,6 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
-  .row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h1{
-    font-size: 2.5rem;
-  }
-
-  .number{
-    font-size: 3rem;
-  }
-
-  
-}
 
 .active{
   z-index: 100;
@@ -224,13 +212,11 @@ body {
   margin-right: auto;
   margin-left: auto;
   width: 15vh;
-  top: 28vh;
+  top: 30vh;
   border-radius: 15vh;
   z-index: 102;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
-
 
 
 
@@ -255,6 +241,19 @@ body {
 }
 
 /* Slideshow container */
+
+.modal-slideshow {
+  display: none;
+  background-color: #fefefe;
+  margin-top: 15px;
+  width: 30%;
+  min-width: 300px;
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
 .slideshow-container {
   position: relative;
   top: 30px;
@@ -292,8 +291,8 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-}
+/* .prev:hover, .next:hover {
+} */
 
 /* Caption text */
 .text {
@@ -354,4 +353,33 @@ body {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .number{
+    font-size: 3rem;
+  }
+
+  .avatar{
+   top: 23%;
+    
+  }
+
+div.scroll-down-arrow{
+  bottom: 14vh;
+}
+
+  
 }

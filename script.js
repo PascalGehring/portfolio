@@ -1,14 +1,14 @@
 function init(){
 
     uss.hrefSetup(); 
-  //  uss.setStepLengthCalculator(EASE_IN_OUT_QUART(1000)); 
+    uss.setStepLengthCalculator(EASE_IN_OUT_QUART(1000)); 
 
-  const appHeight = () => {
-    const doc = document.documentElement
-    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
-  }
-  window.addEventListener('resize', appHeight)
-  appHeight()
+  // const appHeight = () => {
+  //   const doc = document.documentElement
+  //   doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+  // }
+  // window.addEventListener('resize', appHeight)
+  // appHeight()
 
 
   window.onload = function () {
