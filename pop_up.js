@@ -12,7 +12,6 @@ var reason = document.querySelector(`.hide.${popUpName}`);
 
 var close = document.querySelector(`span.close.${popUpName}`);
 
-console.log(gestureDetector);
 
 gestureDetector.addEventListener('click',() => {
     popUp.style.display = 'block';

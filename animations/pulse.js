@@ -1,7 +1,6 @@
 var animations  = document.querySelectorAll('.pulse')
 
 
-console.log(animations);
 
 
 

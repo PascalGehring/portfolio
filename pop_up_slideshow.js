@@ -16,7 +16,6 @@ var close = document.querySelector(`span.close.${popUpName}`);
 
 var emailButton = document.querySelector(`.email-me`);
 
-console.log(gestureDetector);
 
 gestureDetector.addEventListener('click',() => {
     popUp.style.display = 'block';

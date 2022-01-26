@@ -1,7 +1,6 @@
 var animations  = document.querySelectorAll('.move-up-and-down')
 
 
-console.log(animations);
 
 
 
