@@ -1,28 +1,58 @@
-// gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollToPlugin);
 
-// const scrollToSections = ['want-to-work', 'value-i-bring', 'reason1', 'hero'];
+//const scrollToSections = ['want-to-work', 'value-i-bring', 'reason1', 'hero'];
+
+const scrollButtons = ['hero', 'perfect-match', 'heres-why'];
+
+const scrollToSections = ['perfect-match', 'heres-why', 'reason1']
 
 
 
-// var scrollDownButtons = document.querySelectorAll('.scroll-down-arrow')
+const scrollDownDuration = 0.5;
 
 
+// for (var i = 0; i<= scrollButtons.length; i++){
+//     var heroSdb = document.querySelector(`.${scrollButtons[i]}.scroll-down-arrow`);  
+//     //console.log(i);
 
-// for(i = 0; i < scrollDownButtons.length; i++){
-//     console.log(i);
-//     console.log(scrollToSections[i]);
-//     console.log(scrollDownButtons[i]);
+//     console.log(heroSdb);
 
-//     scrollDownButtons[i].addEventListener('click', ()=> {
-//     gsap.to(window, {duration: 1, scrollTo: `#${scrollToSections[i]}`});
-    
-//    });
+
+//     heroSdb.addEventListener('click', ()=> {
+//         gsap.to(window, {duration: scrollDownDuration, scrollTo: `#${scrollToSections[i]}`});
+        
+//     });
 // }
 
 
- 
+// var heroSdb = document.querySelector('.hero.scroll-down-arrow');    
 
 
+// heroSdb.addEventListener('click', ()=> {
+//     gsap.to(window, {duration: scrollDownDuration, scrollTo: '#perfect-match'});
+    
+//    });
+
+
+
+// var perfectMatchSdb = document.querySelector('.perfect-match.scroll-down-arrow'); 
+
+
+// perfectMatchSdb.addEventListener('click', ()=> {
+//     gsap.to(window, {duration: scrollDownDuration, scrollTo: '#heres-why'});
+    
+//    });
+
+
+
+// var heresWhySdb = document.querySelector('.heres-why.scroll-down-arrow'); 
+
+
+//    heresWhySdb.addEventListener('click', ()=> {
+//        gsap.to(window, {duration: scrollDownDuration, scrollTo: '#reason1'});
+       
+//       });
+   
 
 
 

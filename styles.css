@@ -427,8 +427,11 @@ body {
   
 }
 
+.scroll-down-arrow :hover{
+  cursor: pointer;
+}
 
-/* 
+
 a{
   pointer-events: none;
-} */
+}
