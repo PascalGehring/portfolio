@@ -65,9 +65,17 @@ div.scroll-down-arrow {
   bottom: 10vh;
 }
 
-div.scroll-down-arrow p {
-  font-size: 10px;
+
+div.scroll-up-arrow {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  width: max-content;
+  top: 10vh;
 }
+
+
 
 .light-grey {
   color: var(--light-grey);

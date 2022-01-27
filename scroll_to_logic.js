@@ -1,62 +1,33 @@
 gsap.registerPlugin(ScrollToPlugin);
 
-//const scrollToSections = ['want-to-work', 'value-i-bring', 'reason1', 'hero'];
+const scrollButtons = document.querySelectorAll('.scroll-down-arrow');
 
-const scrollButtons = ['hero', 'perfect-match', 'heres-why'];
+let scrollIds = [];
+scrollButtons.forEach((scrollButton) => {
+    const scrollId = scrollButton.classList[0];
 
-const scrollToSections = ['perfect-match', 'heres-why', 'reason1']
+    scrollIds.push(scrollId);
+});
 
+scrollIds.push('contact')
 
+console.log(scrollIds);
 
-const scrollDownDuration = 0.5;
-
-
-// for (var i = 0; i<= scrollButtons.length; i++){
-//     var heroSdb = document.querySelector(`.${scrollButtons[i]}.scroll-down-arrow`);  
-//     //console.log(i);
-
-//     console.log(heroSdb);
+const scrollDownDuration = 0.7;
 
 
-//     heroSdb.addEventListener('click', ()=> {
-//         gsap.to(window, {duration: scrollDownDuration, scrollTo: `#${scrollToSections[i]}`});
-        
-//     });
-// }
+for (var i = 0; i< scrollIds.length - 1; i++){
+
+    const scrollDownButton = document.querySelector(`.${scrollIds[i]}.scroll-down-arrow`);
+
+    const scrollTo = `#${scrollIds[i+1]}`;
+
+    scrollDownButton.addEventListener('click', ()=> {
+        gsap.to(window, {duration: scrollDownDuration, scrollTo: scrollTo});
+   });
+}
 
 
-// var heroSdb = document.querySelector('.hero.scroll-down-arrow');    
-
-
-// heroSdb.addEventListener('click', ()=> {
-//     gsap.to(window, {duration: scrollDownDuration, scrollTo: '#perfect-match'});
-    
-//    });
-
-
-
-// var perfectMatchSdb = document.querySelector('.perfect-match.scroll-down-arrow'); 
-
-
-// perfectMatchSdb.addEventListener('click', ()=> {
-//     gsap.to(window, {duration: scrollDownDuration, scrollTo: '#heres-why'});
-    
-//    });
-
-
-
-// var heresWhySdb = document.querySelector('.heres-why.scroll-down-arrow'); 
-
-
-//    heresWhySdb.addEventListener('click', ()=> {
-//        gsap.to(window, {duration: scrollDownDuration, scrollTo: '#reason1'});
-       
-//       });
-   
-
-
-
-
-
-
-
+// var: type, value dynamic
+// let: type fixed, value dyn
+// const: both fixed
