@@ -1,24 +1,22 @@
-var animations  = document.querySelectorAll('.click-to-see-me')
+let clickToSeeMe  = document.querySelector('.click-to-see-me')
+
+
+    clickToSeeMe.style.display = 'block';
 
 
 
+    var tl = gsap.timeline({repeat: -1,});
 
 
-
-animations.forEach((animation) => {
-
-    var tl = gsap.timeline({});
-
-
-    tl.from(animation,{
+    tl.from(clickToSeeMe,{
         duration: 19
     });
-    tl.from(animation, {
+    tl.from(clickToSeeMe, {
         opacity: 0,
         duration: 2,
         //ease: Power2.easeOut,
     });
-    tl.to(animation, {
+    tl.to(clickToSeeMe, {
         opacity: 0
     });
 
@@ -29,5 +27,3 @@ animations.forEach((animation) => {
 
 
     
-
-});

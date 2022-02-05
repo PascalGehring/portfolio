@@ -22,14 +22,14 @@
 
 h1 {
   font-size: 3rem;
-  text-align: center;
   margin-left: 2vh;
   margin-right: 2vh;
 }
 
-h4{
+h1, h4, h3{
   text-align: center;
 }
+
 
 .slide-element {
   height: 100vh;
@@ -430,16 +430,33 @@ body {
   .showcase-mockup > img{
     width: 70%;
   }
+
+  h1.quote{
+    font-size: 1rem;
+  }
   
 
   
 }
 
-.scroll-down-arrow :hover{
+.scroll-down-arrow :hover, .scroll-up-arrow :hover{
   cursor: pointer;
 }
 
 
-a{
-  pointer-events: none;
+
+
+
+.click-to-see-me{
+  display: none;
 }
+
+
+.scroll-up-arrow > div.move-down-and-up{
+  display: none;
+}
+/* 
+
+.scroll-down-arrow > div.move-up-and-down{
+  display: none;
+} */
