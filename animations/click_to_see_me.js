@@ -9,7 +9,7 @@ let clickToSeeMe  = document.querySelector('.click-to-see-me')
 
 
     tl.from(clickToSeeMe,{
-        duration: 19
+        duration: 5
     });
     tl.from(clickToSeeMe, {
         opacity: 0,
