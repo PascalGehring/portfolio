@@ -22,14 +22,14 @@
 
 h1 {
   font-size: 3rem;
-  text-align: center;
   margin-left: 2vh;
   margin-right: 2vh;
 }
 
-h4{
+h1, h4, h3, h6{
   text-align: center;
 }
+
 
 .slide-element {
   height: 100vh;
@@ -65,9 +65,17 @@ div.scroll-down-arrow {
   bottom: 10vh;
 }
 
-div.scroll-down-arrow p {
-  font-size: 10px;
+
+div.scroll-up-arrow {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  width: max-content;
+  top: 10vh;
 }
+
+
 
 .light-grey {
   color: var(--light-grey);
@@ -422,13 +430,33 @@ body {
   .showcase-mockup > img{
     width: 70%;
   }
+
+  h1.quote{
+    font-size: 1rem;
+  }
   
 
   
 }
 
+.scroll-down-arrow :hover, .scroll-up-arrow :hover{
+  cursor: pointer;
+}
 
+
+
+
+
+.click-to-see-me{
+  display: none;
+}
+
+
+.scroll-up-arrow > div.move-down-and-up{
+  display: none;
+}
 /* 
-a{
-  pointer-events: none;
+
+.scroll-down-arrow > div.move-up-and-down{
+  display: none;
 } */
